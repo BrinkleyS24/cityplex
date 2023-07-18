@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Welcome to Our Movie Theatre</h1>
+        <nav>
+          <ul>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#showtimes">Showtimes</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
+
+      <main>
+        <section id="movies">
+          <h2>Movies</h2>
+          {/* Add movie information and images here */}
+        </section>
+
+        <section id="showtimes">
+          <h2>Showtimes</h2>
+          {/* Add showtime information here */}
+        </section>
+
+        <section id="tickets">
+          <h2>Tickets</h2>
+          {/* Add ticket purchasing form here */}
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          {/* Add contact information and form here */}
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 Your Movie Theatre. All rights reserved.</p>
+      </footer>
     </div>
   );
+
 }
 
-export default App;
+export default MovieTheatreWebsite;
